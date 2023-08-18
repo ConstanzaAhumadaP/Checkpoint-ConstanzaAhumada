@@ -1,0 +1,50 @@
+mkdir Checkpoint-ConstanzaAhumada
+cd Checkpoint-ConstanzaAhumada
+git init
+touch main.js
+echo > main.js
+echo > index.html
+git add main.js index.html
+git commit -m "Primer commit: Agregar main.js e index.html"
+git commint -m "Commit"
+git commit -m "Commit"
+git config --global user.email "constanza.ahumada.p@usach.cl"
+git config --global user.name "ConstanzaAhumadaP"
+git commit -m "Primer"
+git remote add origin URL_DEL_REPOSITORIO_EN_GITHUB
+git remote add origin https://github.com/ConstanzaAhumadaP/Checkpoint-ConstanzaAhumada.git
+git remote set-url origin https://github.com/ConstanzaAhumadaP/Checkpoint-ConstanzaAhumada.git
+git push -u origin main
+2. Desarrollo en la rama main:
+a. Crea los archivos: main.js e index.html, en la carpeta creada en el
+punto anterior.
+b. Una vez realizados los puntos anteriores debes hacer el primer
+commit. Recordar la sintaxis al realizar los commits.
+c. Luego de esto, realiza los pasos necesarios para subir estos
+primeros archivos al repositorio remoto en GitHub.
+3. Trabajo en ramas:
+a. Crea una rama denominada feature
+b. Posicionado dentro de la misma crea las siguientes carpetas:
+i. Hardware
+ii. Software
+iii. SeguridadInformatica.
+c. Dentro de cada carpeta crea un archivo llamado resumen.txt.
+d. Una vez realizada esta estructura de archivos y carpetas deberás
+realizar los pasos necesarios para hacer un push a la rama feature.
+git checkout -b feature
+mkdir Hardware
+mkdir Software
+mkdir SeguridadInformatica
+echo > Hardware\resumen.txt
+echo > Software\resumen.txt
+echo > SeguridadInformatica\resumen.txt
+git add .
+git commit -m "Agregar carpetas y archivos en la rama feature"
+git push origin feature
+git checkout main
+git mv main.js resumenHardware.txt
+git mv index.html resumenSoftware.txt
+notepad resumenSoftware.txt
+notepad resumenHardware.txt
+history > comandos.txt
+doskey /history > comandos.txt
